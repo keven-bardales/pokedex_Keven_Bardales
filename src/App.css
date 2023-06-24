@@ -1,0 +1,39 @@
+.List {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em 0;
+}
+
+.List .card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: calc(30% - 20px);
+  margin: 10px;
+  border-radius: 2em;
+  padding: 1em;
+  background-color: #030712;
+  border: 1px solid #3c424e;
+  cursor: pointer;
+}
+
+.List .list_title {
+  font-size: 3em;
+  flex-basis: 100%;
+  padding-left: 2em;
+}
+
+.card.showPokemon {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card.showPokemon img {
+  flex-basis: 100%;
+  object-fit: contain;
+  max-height: 200px;
+}
