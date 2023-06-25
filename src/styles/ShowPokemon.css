@@ -1,0 +1,41 @@
+.showPokemon {
+  background-color: #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+}
+
+.showPokemon img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.showPokemon h1 {
+  flex-basis: 100%;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.showPokemon h2 {
+  flex-basis: 100%;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.showPokemon div {
+  margin-bottom: 10px;
+}
+
+.showPokemon span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.showPokemon span:last-child {
+  margin-right: 0;
+}

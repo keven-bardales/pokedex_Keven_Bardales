@@ -3,6 +3,7 @@ import { PICTURE_POKEMON_URL } from './../services/api';
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { getPokemonByIdRequest } from '../services/api.js';
+import '../styles/ShowPokemon.css';
 
 function ShowPokemon() {
   const PLACEHOLDER =
@@ -34,10 +35,17 @@ function ShowPokemon() {
     });
   };
 
-  /*  const renderStats = () => {
+  const renderStats = () => {
     if (!pokemon) return <span>Nothing to Show right Now</span>;
-
-  }; */
+    return pokemon.stats.map((obj) => {
+      console.log(obj);
+      return (
+        <span key={obj.stat.name}>
+          {obj.stat.name}: {obj.base_stat}
+        </span>
+      );
+    });
+  };
 
   return (
     <>
@@ -49,6 +57,7 @@ function ShowPokemon() {
         <h1>{pokemon ? pokemon.id : 'Pokemon Id'}</h1>
         <h2>{pokemon ? pokemon.name : 'Pokemon Name'}</h2>
         <div>{renderHabilities()}</div>
+        <div>{renderStats()}</div>
       </article>
     </>
   );

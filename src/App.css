@@ -18,6 +18,19 @@
   cursor: pointer;
 }
 
+.card img {
+  object-fit: contain;
+  flex-basis: 100%;
+  height: auto;
+  max-height: 200px;
+}
+
+.card h1,
+.card h2 {
+  text-align: center;
+  flex-basis: 100%;
+}
+
 .List .list_title {
   font-size: 3em;
   flex-basis: 100%;
